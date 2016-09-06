@@ -30,11 +30,11 @@ module.exports = {
 		},
 		css: {
 			src: "src/css/**/*.css",
-			dest: "src/css"
+			dest: "dist/css"
 		},
 		scss: {
 			src: "src/scss/**/*.scss",
-			dest: "src/css"
+			dest: "dist/css"
 		},
 		imagemin: {
 			src: "src/images/*",
