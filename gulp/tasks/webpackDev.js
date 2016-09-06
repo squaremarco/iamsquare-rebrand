@@ -1,7 +1,8 @@
 "use strict";
 
 var gulp = require("gulp");
-var webpack = require("webpack-stream");
+var webpack = require("webpack");
+var webpackStream = require("webpack-stream");
 var config = require("../config");
 
 module.exports = function(callback){
@@ -17,7 +18,7 @@ module.exports = function(callback){
 		]
 	};
 
-	webpack(options)
+	webpackStream(options)
 	.pipe(gulp.dest(config.paths.webpack.dest));
 	callback();
 };
