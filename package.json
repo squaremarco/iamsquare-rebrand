@@ -1,0 +1,44 @@
+{
+  "name": "iamsquare-rebrand",
+  "version": "v0.0.0",
+  "description": "Personal page source code http://iamsquare.it",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squaremarco/iamsquare-rebrand.git"
+  },
+  "keywords": [
+    "iamsquare",
+    "rebrand",
+    "website"
+  ],
+  "author": "squaremarco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/squaremarco/iamsquare-rebrand/issues"
+  },
+  "homepage": "https://github.com/squaremarco/iamsquare-rebrand#readme",
+  "devDependencies": {
+    "bonzo": "^2.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-csso": "^2.0.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-pug": "^3.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.9",
+    "gulp-webserver": "^0.9.1",
+    "pug": "^2.0.0-beta6",
+    "qwery": "^4.0.0",
+    "require-dir": "^0.3.0",
+    "webpack": "^1.13.2",
+    "webpack-stream": "^3.2.0"
+  }
+}
