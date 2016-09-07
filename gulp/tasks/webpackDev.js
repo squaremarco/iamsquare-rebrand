@@ -1,24 +1,27 @@
 "use strict";
 
-var gulp = require("gulp");
+var gutil = require("gulp-util");
 var webpack = require("webpack");
-var webpackStream = require("webpack-stream");
 var config = require("../config");
 
 module.exports = function(callback){
 	var options = {
-		entry: config.paths.webpack.src,
+		entry: config.paths.webpackDev.src,
 		output: {
+			path: config.paths.webpackDev.dest,
 			filename: config.names.webpack
 		},
 		watch: true,
 		cache: true,
 		plugins: [
-			new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js"),
+			new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js")
 		]
 	};
 
-	webpackStream(options)
-	.pipe(gulp.dest(config.paths.webpack.dest));
-	callback();
+	webpack(options, function(err, stats){
+		gutil.log("[WebpackDev]", stats.toString({
+			colors: true
+		}));
+		callback();
+	});
 };
