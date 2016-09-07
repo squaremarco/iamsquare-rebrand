@@ -1,0 +1,32 @@
+include ./pug/_mixins.pug
+
+doctype html
+html
+	head
+		meta(charset="utf-8" name="viewport" content="width=device-width, minumum-scale=1.0, maximum-scale=1.0")
+		title I am Square
+		+favicon("favicon.ico", "image/x-icon", "16x16")
+		+favicon("images/favicon-16x16.png", "image/png", "16x16")
+		+favicon("images/favicon-32x32.png", "image/png", "32x32")
+		+favicon("images/favicon-96x96.png", "image/png", "96x96")
+
+		// build:css css/vendor.css
+		+stylesheet("../node_modules/font-awesome/css/font-awesome.css")
+		+stylesheet("../node_modules/devicons/css/devicons.css")
+		+stylesheet("../assets/iamsquare-fonts/css/iamsquare-fonts.css")
+		+stylesheet("../node_modules/normalize-css/normalize.css")
+		// /build
+		+stylesheet("css/style.css")
+	body
+		#main
+			.main-container
+				.main-logo
+				h1.
+					Hi, <span class="accent">I am Square</span>. I've always been interested in <span class="accent">Digital Graphic</span> and <span class="accent">Web Design</span>. When I am given a task be <span class="accent">damn sure</span> I will put <a href="http://hyperboleandahalf.blogspot.it/2010/04/alot-is-better-than-you-at-everything.html" target="_blank"><span class="accent">alot <i class="alot"></i></span></a> of effort into it.
+				.main-nav
+					+button("https://github.com/squaremarco/", "fa-github-alt", "_blank", "Check my repos", true)
+					+button("mailto:sq@iamsquare.it", "fa-envelope", "", "sq@iamsquare.it", false)
+					+button("https://linkedin.com/in/squaree", "fa-linkedin", "_blank", "", false)
+					+button("https://facebook.com/iamsquar3", "fa-facebook", "_blank", "", false)
+		script(src="js/vendor.bundle.js")
+		script(scr="js/app.bundle.js")

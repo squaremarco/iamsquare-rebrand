@@ -1,0 +1,35 @@
+$logo-url: "../images/logored.png";
+
+$base-logo-size: 150px;
+
+$base-font-size: 16px;
+$base-line-height: 1.2em;
+
+$primary-font-family: "Harmonia Sans Bold", "Sans Serif";
+$secondary-font-family: "Harmonia Sans", "Sans Serif";
+
+$primary-font-size: 3em;
+$primary-line-height: 1.16667em;
+
+$primary-padding: 70px;
+$primary-margin: 40px;
+
+//mobile variables
+
+$mobile-logo-size: $base-logo-size / 2;
+
+$mobile-primary-font-size: $primary-font-size / 2;
+$mobile-primary-line-height: $primary-line-height;
+
+$mobile-primary-padding: $primary-padding / 4;
+
+//color variables
+
+$white: #fff;
+$black: #000;
+$orange100: #ffe0b2;
+$orange500: #ff9800;
+$orange800: #ef6c00;
+$pink200: #ff4081;
+$pink400: #f50057;
+$selection-color: #f30086;

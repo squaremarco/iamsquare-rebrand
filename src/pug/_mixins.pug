@@ -1,0 +1,15 @@
+mixin favicon(href, type, size)
+	link(rel="favicon" href=href type=type sizes=size)
+
+mixin stylesheet(href)
+	link(rel="stylesheet" href=href)
+
+mixin button(href, cls, target, text, border)
+	if border
+		a.button.button-important(href=href target=target)
+			i(class="fa " + cls)
+			| #{" " + text}
+	else
+		a.button(href=href target=target)
+			i(class="fa " + cls)
+			| #{" " + text}

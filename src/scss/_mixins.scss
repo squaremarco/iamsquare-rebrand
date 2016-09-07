@@ -1,0 +1,58 @@
+@mixin section-content($bg, $color){
+	position: relative;
+	width: 100%;
+	background: $bg;
+	color: $color;
+}
+
+
+@mixin text-selection($bg, $color) {
+	&::selection{
+		background: $bg;
+		color: $color;
+	}
+}
+
+@mixin disable-text-selection() {
+	@include text-selection(none, inherit);
+}
+
+@mixin rectangle($h, $w){
+	height: $h;
+	width: $w;
+}
+
+@mixin square($l) {
+	@include rectangle($l, $l);
+}
+
+@mixin rounded-rectangle($h, $w, $r) {
+	@include rectangle($h, $w);
+	border-radius: $r;
+}
+
+@mixin circle($d) {
+	@include rounded-rectangle($d, $d, 100%);
+}
+
+@mixin div-align-center(){
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin arrow-square($color, $size){
+	&::after {
+		top: 100%;
+		left: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: transparent;
+		border-top-color: $color;
+		border-width: $size;
+		margin-left: -$size;
+	}
+}
