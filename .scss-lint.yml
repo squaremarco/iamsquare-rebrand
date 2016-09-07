@@ -15,3 +15,7 @@ linters:
         enabled: false
     StringQuotes:
         enabled: false
+    SpaceBeforeBrace:
+        enabled: false
+    IdSelector:
+        enabled: false
