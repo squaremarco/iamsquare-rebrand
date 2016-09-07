@@ -8,3 +8,6 @@ env:
     commonjs: true
     amd: true
     es6: true
+rules:
+    no-unused-vars: ["warn"]
+    no-console: ["warn"]
