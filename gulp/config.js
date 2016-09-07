@@ -12,7 +12,7 @@ module.exports = {
 		},
 		server: {
 			livereload: true,
-			open: true
+			open: "http://localhost:8000/dist"
 		},
 		scss: {
 			sourceMapContents: false,
@@ -32,7 +32,7 @@ module.exports = {
 			dest: "./dist"
 		},
 		server: {
-			src: "dist"
+			src: "./"
 		},
 		css: {
 			src: "./src/css/**/*.css",
