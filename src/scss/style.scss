@@ -1,0 +1,82 @@
+@import "mixins", "variables";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $primary-font-family;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+}
+
+p {
+	font-family: $secondary-font-family;
+}
+
+a {
+	color: $pink400;
+	text-decoration: none;
+	&:hover {
+		color: $white;
+	}
+
+	// overrides normalize.css stupid as fuck rule
+	&:focus {
+		outline: 0;
+	}
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+span {
+	@include text-selection($selection-color, $white);
+}
+
+.accent {
+	color: $pink400;
+}
+
+.button {
+	&.button-important {
+		border-radius: 2em;
+		border-color: $pink400;
+		border-style: solid;
+
+		&:hover {
+			background: $pink400;
+			border-color: $white;
+		}
+	}
+}
+
+#main {
+	@include section-content($orange500, $white);
+	@include arrow-square($orange500, 10px);
+}
+
+.main-container {
+	@include div-align-center();
+
+	text-align: justify;
+
+	.main-logo {
+		// scss-lint:disable SpaceAroundOperator
+		@include div-align-center();
+		background: no-repeat center/cover url($logo-url);
+	}
+
+	.main-nav {
+		@include disable-text-selection();
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+	}
+}
+
+@import "mobile";

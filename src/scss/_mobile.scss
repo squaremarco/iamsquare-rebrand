@@ -1,0 +1,47 @@
+.button {
+	padding: .4em .6em;
+
+	&.button-important {
+
+		@media (max-width: 470px){
+			margin-bottom: .3em;
+			width: 100%;
+		}
+
+		text-align: center;
+	}
+}
+
+#main {
+	padding: $mobile-primary-padding;
+}
+
+.main-container {
+	width: 100%;
+
+	@media (min-width: 430px) and (max-width: 539px){
+		width: 90%;
+	}
+
+	@media (min-width: 540px) and (max-width: 599px){
+		width: 80%;
+	}
+
+	@media (min-width: 600px) and (max-width: 765px){
+		width: 70%;
+	}
+
+	.main-logo {
+		@include square($mobile-logo-size);
+	}
+
+	.main-nav {
+		justify-content: space-around;
+	}
+
+	// override normalize sizes
+	h1 {
+		font-size: $mobile-primary-font-size;
+		line-height: $mobile-primary-line-height;
+	}
+}

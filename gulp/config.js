@@ -49,7 +49,7 @@ module.exports = {
 		webpack: {
 			src: {
 				app: ["./src/js/script.js"],
-				vendor: ["bonzo", "qwery", "font-awesome/css/font-awesome.css", "normalize-css/normalize.css", "devicons/css/devicons.css", "alot-font/css/alot.css"]
+				vendor: ["bonzo", "qwery", "font-awesome/css/font-awesome.css", "normalize-css/normalize.css", "devicons/css/devicons.css", "./assets/iamsquare-fonts/css/iamsquare-fonts.css"]
 			},
 			dest: "./dist/js"
 		},

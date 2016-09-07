@@ -1,0 +1,37 @@
+@font-face {
+	font-family: "Harmonia Sans";
+	src: url("../fonts/3067ab_0_02.woff") format("woff");
+	font-wight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Harmonia Sans Bold";
+	src: url("../fonts/3067ab_1_01.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: alot;
+    src: url(../fonts/alot.eot);
+    src: url(../fonts/alot.eot?#iefix) format("embedded-opentype"), url(../fonts/alot.woff) format("woff"), url(../fonts/alot.ttf) format("truetype"), url(../fonts/alot.svg#alot) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+.alot {
+    font-family: alot;
+    speak: none;
+	font-size: 1.3em;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+	position: relative;
+	top: 0.2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+.alot:before {
+    content: "\61"
+}
