@@ -19,6 +19,7 @@ p {
 a {
 	color: $pink400;
 	text-decoration: none;
+
 	&:hover {
 		color: $white;
 	}
@@ -55,6 +56,47 @@ span {
 	}
 }
 
+.col {
+	width: 100%;
+}
+
+.flex-col {
+	@extend .col;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	.flex-col-text {
+		text-align: center;
+	}
+	
+	.flex-col-icon {
+		box-sizing: content-box;
+		border: 6px solid $orange500;
+		flex: 0 0 auto;
+	}
+}
+
+.icon-brainstorm {
+	// scss-lint:disable SpaceAroundOperator
+	background: no-repeat center/cover url($brainstorm-url);
+}
+
+.icon-draft {
+	// scss-lint:disable SpaceAroundOperator
+	background: no-repeat center/cover url($draft-url);
+}
+
+.icon-refining {
+	// scss-lint:disable SpaceAroundOperator
+	background: no-repeat center/cover url($refining-url);
+}
+
+.icon-shipping {
+	// scss-lint:disable SpaceAroundOperator
+	background: no-repeat center/cover url($shipping-url);
+}
+
 #main {
 	@include section-content($orange500, $white);
 	@include arrow-square($orange500, 10px);
@@ -77,6 +119,14 @@ span {
 		flex-flow: row wrap;
 		align-items: center;
 	}
+}
+
+#how {
+	@include section-content($white, $orange500);
+}
+
+.how-container {
+	@include div-align-center();
 }
 
 @import "mobile";

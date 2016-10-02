@@ -1,4 +1,9 @@
 $logo-url: "../images/logored.png";
+$portrait-url: "../images/portrait.png";
+$draft-url: "../images/draft.png";
+$brainstorm-url: "../images/brainstorm.png";
+$refining-url: "../images/refining.png";
+$shipping-url: "../images/shipping.png";
 
 $base-logo-size: 150px;
 
@@ -11,6 +16,12 @@ $secondary-font-family: "Harmonia Sans", "Sans Serif";
 $primary-font-size: 3em;
 $primary-line-height: 1.16667em;
 
+$secondary-font-size: 2em;
+$secondary-line-height: 1.15em;
+
+$tertiary-font-size: 1em;
+$tertiary-line-height: 1.13667em;
+
 $primary-padding: 70px;
 $primary-margin: 40px;
 
@@ -20,6 +31,12 @@ $mobile-logo-size: $base-logo-size / 2;
 
 $mobile-primary-font-size: $primary-font-size / 2;
 $mobile-primary-line-height: $primary-line-height;
+
+$mobile-secondary-font-size: $secondary-font-size / 1.5;
+$mobile-secondary-line-height: $secondary-line-height;
+
+$mobile-tertiary-font-size: $tertiary-font-size;
+$mobile-tertiary-line-height: $tertiary-line-height;
 
 $mobile-primary-padding: $primary-padding / 4;
 
