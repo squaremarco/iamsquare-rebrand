@@ -18,7 +18,7 @@
 	}
 
 	.flex-col-icon {
-		@include circle(65px);
+		@include circle($mobile-images-size);
 	}
 
 	&:nth-child(2n){
@@ -49,6 +49,7 @@
 
 	.main-logo {
 		@include square($mobile-logo-size);
+		margin-top: $mobile-primary-margin;
 	}
 
 	.main-nav {
@@ -95,5 +96,36 @@
 	p {
 		font-size: $mobile-tertiary-font-size;
 		line-height: $mobile-tertiary-line-height;
+	}
+}
+
+#description {
+	padding: $mobile-primary-padding;
+}
+
+.description-container {
+	width: 100%;
+
+	@media (min-width: 430px) and (max-width: 539px){
+		width: 90%;
+	}
+
+	@media (min-width: 540px) and (max-width: 599px){
+		width: 80%;
+	}
+
+	@media (min-width: 600px) and (max-width: 765px){
+		width: 70%;
+	}
+
+	.description-portrait {
+		@include circle($mobile-images-size);
+		margin-top: $mobile-primary-margin;
+	}
+
+	// override normalize sizes
+	h1 {
+		font-size: $mobile-primary-font-size;
+		line-height: $mobile-primary-line-height;
 	}
 }
