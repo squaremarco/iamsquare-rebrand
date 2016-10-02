@@ -54,5 +54,6 @@
 		border-top-color: $color;
 		border-width: $size;
 		margin-left: -$size;
+		z-index: 1;
 	}
 }
