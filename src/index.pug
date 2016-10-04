@@ -62,7 +62,19 @@ html
 				.description-portrait
 				h1.
 					<span class="accent">Back in 2004</span> my family decided to subscribe to a DSL plan. I was twelve and from that moment <span class="accent">my life completely changed</span>. Since then it has been <span class="accent">entirely dedicated to the web</span> and its various components. Currently I'm a CE undergraduate that likes to <span class="accent random"></span>.
-
+		#powered
+			.powered-container
+				p
+					+poweredButton("", "devicons-html5")
+					+poweredButton("", "devicons-css3")
+					+poweredButton("http://sass-lang.com", "devicons-sass")
+					+poweredButton("https://developer.mozilla.org/en-US/docs/Web/JavaScript", "devicons-javascript")
+					+poweredButton("http://jquery.com", "devicons-jquery")
+					+poweredButton("http://angularjs.org", "devicons-angular")
+					+poweredButton("http://www.adobe.com/products/photoshop.html", "devicons-photoshop")
+					+poweredButton("http://www.adobe.com/products/illustrator.html", "devicons-illustrator")
+					+poweredButton("http://gulpjs.com", "devicons-gulp")
+					+poweredButton("https://www.npmjs.com", "devicons-npm")
 
 		script(src="js/vendor.bundle.js")
 		script(src="js/app.bundle.js")

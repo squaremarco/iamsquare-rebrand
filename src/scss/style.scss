@@ -148,4 +148,25 @@ span {
 	}
 }
 
+#powered {
+	@include section-content($white, $orange500);
+}
+
+.powered-container {
+	@include div-align-center();
+
+	text-align: center;
+
+	p {
+		@include disable-text-selection();
+	}
+
+	a {
+		color: $orange500;
+		&:hover {
+			color: $pink400;
+		}
+	}
+}
+
 @import "mobile";

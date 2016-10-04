@@ -13,3 +13,10 @@ mixin button(href, cls, target, text, border)
 		a.button(href=href target=target)
 			i(class="fa " + cls)
 			| #{" " + text}
+
+mixin poweredButton(href, cls)
+	if href
+		a(href=href target="_blank")
+			i(class="devicons " + cls)
+	else
+		i(class="devicons " + cls)
